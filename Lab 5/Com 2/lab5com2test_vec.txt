@@ -1,0 +1,11 @@
+// truth table for S D0 D1 D2 D3 | Y
+// equation D0 for S00, D1 for S01, D2 for S10, D3 for S11
+000XXX0
+001XXX1
+01X0XX0
+01X1XX1
+10XX0X0
+10XX1X1
+11XX0X0
+11XX1X1
+XXXX

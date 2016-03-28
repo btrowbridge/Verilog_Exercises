@@ -1,0 +1,11 @@
+// truth table for s D0 D1 | Y
+// equation not S and D0 or S and D1 equals Y
+0000
+0010
+0101
+0111
+1000
+1011
+1100 
+1111
+XXXX

@@ -1,0 +1,16 @@
+A=0 B=0 C=0 D=0 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=1
+A=0 B=0 C=0 D=1 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=1
+A=0 B=0 C=1 D=1 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=1
+A=0 B=0 C=1 D=0 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=1
+A=0 B=1 C=1 D=0 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=0
+A=0 B=1 C=1 D=1 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=0
+A=0 B=1 C=0 D=1 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=0
+A=0 B=1 C=0 D=0 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=0
+A=1 B=1 C=0 D=0 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=0
+A=1 B=1 C=0 D=1 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=1
+A=1 B=1 C=1 D=1 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=1
+A=1 B=1 C=1 D=0 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=0
+A=1 B=0 C=1 D=0 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=1
+A=1 B=0 C=1 D=1 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=1
+A=1 B=0 C=0 D=1 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=0
+A=1 B=0 C=0 D=0 nA=z nB=z nD=z nAnB=z ABD=z nBnD=z ACD=z G=1

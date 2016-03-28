@@ -1,0 +1,68 @@
+#! c:/iverilog-x86/bin/vvp
+:ivl_version "10.0 (stable)" "(v10_0)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_00ef51f8 .scope module, "lec6ex1_tb" "lec6ex1_tb" 2 29;
+ .timescale 0 0;
+v00ef87c8_0 .var "wA", 0 0;
+v00ef8820_0 .var "wB", 0 0;
+v00ef8878_0 .var "wC", 0 0;
+v00ef88d0_0 .net "wY", 0 0, L_02b312a0;  1 drivers
+S_00ef3fd8 .scope module, "uut" "lec6ex1" 2 53, 2 1 0, S_00ef51f8;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A"
+    .port_info 1 /INPUT 1 "B"
+    .port_info 2 /INPUT 1 "C"
+    .port_info 3 /OUTPUT 1 "Y"
+L_00ef8928 .functor AND 1, v00ef87c8_0, v00ef8820_0, C4<1>, C4<1>;
+L_00efec20 .functor AND 1, v00ef8820_0, v00ef8878_0, C4<1>, C4<1>;
+L_02b312a0 .functor OR 1, L_00ef8928, L_00efec20, C4<0>, C4<0>;
+v00ef52c8_0 .net "A", 0 0, v00ef87c8_0;  1 drivers
+v00ef40a8_0 .net "AB", 0 0, L_00ef8928;  1 drivers
+v00ef4100_0 .net "B", 0 0, v00ef8820_0;  1 drivers
+v00ef4158_0 .net "BC", 0 0, L_00efec20;  1 drivers
+v00ef8718_0 .net "C", 0 0, v00ef8878_0;  1 drivers
+v00ef8770_0 .net "Y", 0 0, L_02b312a0;  alias, 1 drivers
+    .scope S_00ef51f8;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00ef87c8_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00ef8820_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00ef8878_0, 0, 1;
+    %vpi_call 2 40 "$monitor", "A=%b B=%b C=%b Y=%b", v00ef87c8_0, v00ef8820_0, v00ef8878_0, v00ef88d0_0 {0 0 0};
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00ef8878_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00ef8820_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00ef8878_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00ef87c8_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00ef8878_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00ef8820_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00ef8878_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 48 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "lec6ex1.v";
